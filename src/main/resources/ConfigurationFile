@@ -1,0 +1,17 @@
+phonetics.Soundex=com.pb.dps.algos.SoundexImpl
+phonetics.Metaphone=com.pb.dps.algos.MetaphoneAlgoImpl
+similarity.CosineSimilarity=com.pb.dps.algos.CosineSimilarityImpl
+similarity.fuzzy=com.pb.dps.algos.FuzzyScoreImpl
+distance.Levenshtein=com.pb.dps.algos.LevenshteinDistanceImpl
+distance.JaroWinkler=com.pb.dps.algos.JaroWinklerDistanceImpl
+distance.CosineDistance=com.pb.dps.algos.CosineDistanceImpl
+phonetics.algo=phonetics.Soundex:0.1
+similarity.algo=similarity.fuzzy:0.1
+distance.algo=distance.JaroWinkler:0.2,distance.Levenshtein:0.8
+distance.ensemble=com.pb.dps.ensemble.DistanceEnsembleAvg
+similarity.ensemble=com.pb.dps.ensemble.SimilarityEnsembleMax
+phonetic.ensemble=com.pb.dps.ensemble.PhoneticsEnsembleOR
+distance.threshold=0.2
+similarity.threshold=0.8
+distance.similarity.combined.threshold=0.5
+matching.threshold=0.5
